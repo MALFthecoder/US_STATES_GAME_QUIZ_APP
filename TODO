@@ -1,0 +1,33 @@
+Here is the list of to-do items that need to be written to generate the code:
+
+1. **Turtle and Screen Setup:**
+   - [ ] Import the `turtle` module for creating graphics.
+   - [ ] Create a `turtle.Screen()` object.
+   - [ ] Set the screen title.
+   - [ ] Load the background image using `turtle.addshape()`.
+
+2. **CSV Data Handling:**
+   - [ ] Import the `pandas` module for working with CSV data.
+   - [ ] Read the CSV file ("50_states.csv") using `pandas.read_csv()`.
+
+3. **Data Lists:**
+   - [ ] Create a list `all_states` containing all the state names from the CSV data.
+   - [ ] Create an empty list `guessed_states` to keep track of correctly guessed states.
+
+4. **Game Loop:**
+   - [ ] Set up a `while` loop to continue until 50 states are guessed.
+   - [ ] Use `screen.textinput()` to prompt the user for another state's name.
+   - [ ] If the user inputs "Exit":
+     - [ ] Create a list `missing_states` to store states that haven't been guessed.
+     - [ ] Iterate through `all_states` and append missing states to `missing_states`.
+     - [ ] Create a new DataFrame `new_data` with missing states.
+     - [ ] Save `new_data` to a CSV file ("states_to_learn.csv").
+     - [ ] Exit the loop.
+   - [ ] If the user's input is a valid state name:
+     - [ ] Add the state to `guessed_states`.
+     - [ ] Create a new `turtle.Turtle()` object.
+     - [ ] Set up the turtle's appearance and positioning.
+     - [ ] Filter `data` to get information about the guessed state.
+     - [ ] Position the turtle on the map using `t.goto()`.
+     - [ ] Use `t.write()` to display the guessed state's name.
+
